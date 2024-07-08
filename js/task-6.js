@@ -35,7 +35,6 @@ function createBoxes(amount) {
   for (let i = 0; i < amount; i += 1) {
     box += `<div style="width:${boxSize}px; height:${boxSize}px; background-color:${getRandomHexColor()}"></div>`;
     boxSize += 10;
-    console.log(box);
   }
   refs.boxesContainerEl.innerHTML = box;
 }

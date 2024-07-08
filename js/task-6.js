@@ -16,7 +16,7 @@ function getRandomHexColor() {
 
 function createBtn() {
   const amount = refs.inputTextEl.value.trim();
-  if (amount >= 0 && amount <= 100) {
+  if (amount > 0 && amount <= 100) {
     createBoxes(amount);
     refs.inputTextEl.value = '';
   } else {
